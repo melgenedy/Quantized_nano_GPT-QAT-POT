@@ -14,3 +14,7 @@ The main files that contain my contribution in quantizing character level model 
 - directory "out-shakespeare-char-qat" ==> has pretrained LLM model for caracter based model, that can be used as baseline for QAT to start with and fine tuning with quantization inserted
 - Used some small suggestions and fixes by LLMs. Also, differnet questions and discussions with LLMs
 
+For PoT-QAT of GPT-2 124M,
+- config/finetune_openwebQAT.py ==> configuration file
+- train_gpt_qat_pot_quant_v3.py ==> main script to run training loop and test performance of GPT-2 124M with quantization PoT and uniform supported.
+- bert_utils.py ==> utility functions to compute BERT-Score
